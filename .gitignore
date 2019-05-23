@@ -88,6 +88,10 @@ target/
 # Mypy cache
 .mypy_cache/
 *draft*
+
+# big files
 *.h5
 *.npy
 *.zip
+sincere/
+tf-df/
