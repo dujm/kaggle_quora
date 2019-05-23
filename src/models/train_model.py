@@ -1,25 +1,4 @@
 #!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-# %%
-# ---
-# jupyter:
-#   jupytext:
-#     text_representation:
-#       extension: .py
-#       format_name: percent
-#       format_version: '1.2'
-#       jupytext_version: 1.1.1
-#   kernelspec:
-#     display_name: Python 3
-#     language: python
-#     name: python3
-
-# Install nltk
-# #!conda install -c anaconda nltk
-# Download data
-#cd path/src/data/input
-# kaggle competitions download -c quora-insincere-questions-classification
-# Convert
 import os, math
 import numpy as np
 import pandas as pd
