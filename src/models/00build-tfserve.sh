@@ -1,4 +1,5 @@
 # 1. clone tfserving repo
+# cd  localpath
 git clone https://github.com/tensorflow/serving.git
 
 # 2. Build tfserving locally
