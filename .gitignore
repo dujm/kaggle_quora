@@ -93,5 +93,5 @@ target/
 *.h5
 *.npy
 *.zip
-sincere/
 tf-df/
+__pycache__
