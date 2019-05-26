@@ -124,10 +124,19 @@ loss, acc = model.evaluate(val_vects, val_y)
 print("Untrained model, accuracy: {:5.2f}%".format(100*acc))
 # Untrained model, accuracy: 96.43%
 
+# %% TF 2.0 saved_model
+# https://www.tensorflow.org/alpha/guide/saved_model
+# https://www.tensorflow.org/versions/r2.0/api_docs/python/tf/saved_model/save
+tf.saved_model.save(model, "sincere/1/")
+saved_model_cli show --dir sincere/1 --tag_set serve --signature_def serving_default
+
+# %%
 # If you want to save the weights manually
 # https://www.tensorflow.org/tutorials/keras/save_and_restore_models
 #model.save("../models/tf-df/model{}.h5".format(int(time.time())))
 #model.save_weights("../models/tf-df/weights{}".format(int(time.time())))
+
+
 
 
 # Restore the weights
