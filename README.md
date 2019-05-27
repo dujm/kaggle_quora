@@ -3,17 +3,16 @@
 Use Tensorflow Serving to serve a TF2.0 NLP model  
 
 ------
-
 ## Table of Contents
 - [Usage](#usage)
 - [Files](#files)
 - [Code style](#code-style)
 - [Prerequisites](#prerequisites)
+- [Reference](#reference)
 - [License](#license)
 
 
 ------
-
 ## Usage
 1. Clone the repo
 
@@ -34,11 +33,11 @@ pip install -r requirements.txt
 3. Download the Kaggle Quora dataset
  * [Download from Kaggle Website](https://www.kaggle.com/c/quora-insincere-questions-classification/data)
 
- * [Or install kaggle API](https://dujm.github.io/datasciences/kaggle) and run:
+ * [Or install Kaggle API](https://dujm.github.io/datasciences/kaggle) and run:
 
     ```
     bash src/data/download-dataset.sh
-    unzip embeddings.zip
+    unzip src/data/embeddings.zip
     ```
 
 4. Build tensorflow serving locally
@@ -47,7 +46,7 @@ pip install -r requirements.txt
 bash src/models/00build-tfserve.sh
 ```
 
-5. Train a test NLP model and save the model as **Tensorflow saved model**
+5. Train a test NLP model and save the model as a **Tensorflow saved model**
 
 ```
 python src/models/01train-saved-model.py
@@ -99,6 +98,13 @@ The information about code style in python is documented in this two links [pyth
 ------
 ## Prerequisites
 Python 3
+
+------
+## Reference
+ * [Quora Insincere Questions Classification](https://www.kaggle.com/c/quora-insincere-questions-classification)
+ * [Using the SavedModel format](https://www.tensorflow.org/alpha/guide/saved_model)
+ * [tf.saved_model.save](https://www.tensorflow.org/versions/r2.0/api_docs/python/tf/saved_model/save)
+ * [TensorFlow Serving](https://github.com/tensorflow/serving)
 
 ------
 ## License
