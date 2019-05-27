@@ -5,8 +5,8 @@ Use Tensorflow Serving to serve a TF2.0 NLP model
 ------
 
 ## Table of Contents
-- [How to use](#how to use)
-- [File structure](#The file structure after above steps)
+- [Usage](#usage)
+- [Files](#files)
 - [Code style](#code-style)
 - [Prerequisites](#prerequisites)
 - [License](#license)
@@ -14,7 +14,7 @@ Use Tensorflow Serving to serve a TF2.0 NLP model
 
 ------
 
-## How to use?
+## Usage
 1. Clone the repo
 
 ```
@@ -61,7 +61,7 @@ bash src/models/02tf-serve-model.sh
 TBC
 
 ------
-##  The file structure after above steps
+##  Files
 
      ├── LICENSE
      ├── README.md
