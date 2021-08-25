@@ -1,4 +1,4 @@
-tensorflow==2.0.0a0
+tensorflow==2.5.1
 numpy==1.16.3
 pandas==0.24.2
 tqdm==4.32.1
